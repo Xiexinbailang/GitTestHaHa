@@ -1,0 +1,47 @@
+//
+//  ViewController.m
+//  SVNProj
+//
+//  Created by 刘硕 on 16/4/28.
+//  Copyright © 2016年 刘硕. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSLog(@"欢迎使用SVN代码托管工具～");
+    NSLog(@"婷婷你好");
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(100, 100, 100, 100);
+    [button setTitle:@"提交" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    
+    NSLog(@"哦哦,原来是个按钮,高大上");
+    
+    
+    
+    
+   // 发疯为方法反反复复反复反复
+    
+    
+}
+- (void)buttonClick:(UIButton*)button{
+
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end
